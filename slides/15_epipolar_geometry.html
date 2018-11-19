@@ -6139,7 +6139,7 @@
         e.preventDefault();
 
         var passphrase = document.getElementById('staticrypt-password').value,
-            encryptedMsg = 'f8d9e0f1116194d564d361ece0ff59d374aef92d253306e83a51684fb592ec2eU2FsdGVkX1+u83vtUlmhfhJndjoNJZA7F9cxK9waVQbqVtudVLC/MmOIj1I9dmPq32awp6rt+52LotB1u6BBq5oe6nCBBCwYKuilQ9VR6A0JA5M4GI0zP8ousFa6LSwWVC3TG781pHPeVX5tPE2/uzUJroW0OzN3afnviW8fAE284s4GKUi7GtjggYxOByZQJJw+F60HE9Et6X1dSN6C6Tfy1ntg4U6OV/BIg0gr9YH5jFY1Cea9iVBEQPqI0V9X',
+            encryptedMsg = 'b2a7f8625f8b95616e185cd96040b07a7c9e9bd1f7437269240806c6e44a34d2U2FsdGVkX19sbVU9uVAqQ+V/A8CJcO/koz1JfMVR7z9cFixpBYNKhnf3kuk2q1tOREH1jDzRrcvV+ouuwoXgoZmQ06CJHq6rd4iC8Ex0EU6TB1+bMfKyRxO2RKhsbTkBfGFwVJzTzNlZQsstLcnCr9lDhoOdrD0oI4DylDgik1ap1XjdUFbOr/a5EsPan9vnW6vfZmTOUwsPL5EWU7xl33Fxp1krPOd35YJs9bTnd2/7/H4jCyvUcjqNjTZ24MW6',
             encryptedHMAC = encryptedMsg.substring(0, 64),
             encryptedHTML = encryptedMsg.substring(64),
             decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();

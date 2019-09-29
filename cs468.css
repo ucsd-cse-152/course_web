@@ -13,7 +13,7 @@ body
 
 #content  
 {
-	width: 800px; 
+	width: 900px; 
 	text-align: left; 
 	margin: 0 auto;
 } 
@@ -119,4 +119,7 @@ a:hover {
 #hor-zebra .odd
 {
 	background: #e8edff; 
+}
+#test_table td {
+    min-width: 200px;
 }
